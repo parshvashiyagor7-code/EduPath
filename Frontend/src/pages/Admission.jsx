@@ -1,4 +1,4 @@
-import Navbar from "../components/Navbar";
+import Navbar from "../Components/Navbar";
 import { Link } from "react-router-dom";
 const stats = [
   { value: "200k+", label: "Annual Applicants", icon: "🧑‍🎓", accent: "from-blue-500 to-cyan-500" },
