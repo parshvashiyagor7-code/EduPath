@@ -1,3 +1,6 @@
+import dns from "node:dns";
+dns.setServers(["8.8.8.8", "1.1.1.1"]);
+
 import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
@@ -60,7 +63,7 @@ const bootstrapCollegesIfEmpty = async () => {
     return;
   }
 
-  const seedPath = path.join(__dirname, "data", "Colleges.json");
+  const seedPath = path.join(__dirname, "data", "College.json");
   const seedRaw = await fs.readFile(seedPath, "utf-8");
   const seedData = JSON.parse(seedRaw);
 
